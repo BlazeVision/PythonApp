@@ -31,9 +31,18 @@ class MyGrid(GridLayout):
         self.submit.bind(on_press=self.pressed)
         self.add_widget(self.submit)
 
-    @staticmethod
-    def pressed(instance):
-        print("Pressed")
+    def pressed(self):
+        first = self.first_name.text
+        last = self.last_name.text
+        email = self.email.text
+
+        print("First Name:", first)
+        print("Last Name:", last)
+        print("Email:", email)
+
+        self.first_name.text = ''
+        self.last_name.text = ''
+        self.email.text = ''
 
 
 class MyApp(App):
