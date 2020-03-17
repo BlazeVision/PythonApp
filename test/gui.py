@@ -33,7 +33,7 @@ class MyGrid(GridLayout):
         self.submit.bind(on_press=self.pressed)
         self.add_widget(self.submit)
 
-    def pressed(self):
+    def pressed(self, instance):
         first = self.first_name.text
         last = self.last_name.text
         email = self.email.text
