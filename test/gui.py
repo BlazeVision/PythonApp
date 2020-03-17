@@ -1,3 +1,5 @@
+# GUI app that deploys elements like labels, text fields, and buttons
+# App will take in basic info about the user and print it back out to the console upon submit
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix.gridlayout import GridLayout
