@@ -1,0 +1,16 @@
+<Button>:
+    font_size: 18
+    color: 0.3, 0.6, 0.7, 1
+    size_hint: 0.3, 0.5
+    background_color: 0.3, 0.4, 0.5, 1
+
+<FloatLayout>:
+    Button:
+        id: btn1
+        pos_hint: {'x': 0.5, 'top': 1}
+        text: "Hey click the other guy" if btn1.state == "normal" else "Ouch!"
+
+    Button:
+        id: btn2
+        pos_hint: {'x': 0.2, 'bottom': 1}
+        text: "Hey click the other guy" if btn2.state == "normal" else "Ouch!"
